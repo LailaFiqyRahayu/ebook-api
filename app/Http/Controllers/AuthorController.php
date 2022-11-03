@@ -39,7 +39,7 @@ class AuthorController extends Controller
         $table = Author::create([
             "name" => $request->name,
             "date_of_birth" => $request->date_of_birth,
-            'gender' => $request->gender,
+            "gender" => $request->gender,
             "place_of_birth" => $request->place_of_birth,
             "email" => $request->email,
             "nomor_hp" => $request->nomor_hp,
@@ -106,7 +106,7 @@ class AuthorController extends Controller
             $author->save();
             return response()->json([
                 'status' => 200,
-                'data => $author'
+                'data' => $author
             ],200);
         } else {
             return response()->json([

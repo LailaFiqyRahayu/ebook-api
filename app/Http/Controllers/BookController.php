@@ -7,7 +7,7 @@ use App\Models\Book;
 
 class BookController extends Controller
 {
-    /**
+    /**aa
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -65,6 +65,7 @@ class BookController extends Controller
             return response()->json([
                 'status' => 200,
                 'data' => $book 
+                
             ], 200);
         } else {
             return response()->json([
@@ -104,7 +105,7 @@ class BookController extends Controller
             $book->save();
             return response()->json([
                 'status' => 200,
-                'data => $book'
+                'data' => $book
             ],200);
         } else {
             return response()->json([
